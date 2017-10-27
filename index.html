@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--Please accept your GitHub invitation to be able to contribute to the repository.
+    Also, if you are the only one online or the last to log off, please save the file when you are done.
+    There is a "collaborators" button on the right. Click that and there is a group chat. I think it will be a good way to communicate.
+    
+    PS - Nice font.
+    PPS - This comment should be deleted from our production varsion.
+-->
 <html>
     <head>
         <title>Scandals of the 45th American President</title>
@@ -19,7 +26,8 @@
                 border-color:#000000;
             }
             .container {
-              margin-top: 26pt;
+              margin-top: 36pt;
+              margin-bottom: 36pt;
             }
             .footer {
                 position: fixed;
@@ -30,16 +38,46 @@
             }
             body {
                 font-family: "Palatino Linotype", "Book Antiqua", serif;
+                white-space: nowrap;        /*This is to prevent our scaling from being messed up by someone using a tiny screen*/
             }
             a:link .popup{
                 display: none;
+                visibility: hidden;
             }
             a:hover .popup{
                 display: block;
+                visibility: visible;
             }
             .container h1 {
                 font-weight: 900;
                 font-variant: small-caps;
+            }
+            .top-div {
+                width: 100%;
+                text-align: center;
+            }
+            .left-div {    /*The left-div and right div will be used to have a line down the middle of the webpage, separating the dates from the events.*/
+                position: absolute;
+                left: 0;
+                width: 50%;
+                text-align: right;
+                border-right: 1pt #000000 solid;
+            }
+            .right-div {
+                position: absolute;
+                right: 0;
+                width: 50%;
+                text-align: left;
+                border-left: 1pt #000000 solid;
+            }
+            .left-div svg {
+                position: absolute;
+                right: -9px;
+                top: -2px;
+            }
+            .right-div svg {
+                position: absolute;
+                left: -10px;
             }
         </style>
     </head>
@@ -50,10 +88,26 @@
             </h1>
         </div>
         <div class="container">         <!--This is where our content will go-->
-            <h1>2015 - It Begins </h1>
+            <!--<br><h1>2015 - It Begins </h1>-->
+            <span class="left-div">
+                <svg width="19" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="20" x2="10" y2="0" style="stroke:#000000; stroke-width:1pt;"/>
+                    <line x1="20" y1="20" x2="10" y2="0" style="stroke:#000000; stroke-width:1pt;"/>
+                    <line x1="10" y1="0" x2="10" y2="20" style="stroke:#000000; stroke-width:1pt;"/>
+                </svg>
+                <br><br>
+            </span>
+            <span class="right-div">
+                <br><br>
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="20" x2="0" y2="0" style="stroke:#000000; stroke-width:1pt;"/>
+                    <line x1="10" y1="20" x2="20" y2="0" style="stroke:#000000; stroke-width:1pt;"/>
+                    <line x1="10" y1="0" x2="10" y2="20" style="stroke:#000000; stroke-width:1pt;"/>
+                </svg>
+            </span>
         </div>
         <div class="footer">            <!--This is where the footer that stays at the bottom of the screen will go.-->
-            
+           <a href="//github.com/0100001001000010/governmentApp">View the source code or contribute!</a>
         </div>
     </body>
 </html>
