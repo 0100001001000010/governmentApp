@@ -1,0 +1,6 @@
+#Any files in here are ignored by git and will not be pushed to our repository. Because of this, they will never be a part of the website. If you are documenting your code, please list the file name in here. Also, our content.txt will remain in here because we don't want it published - I created it specifically so we could put our content into a file before it ends up on our website.
+#*.swp and *.swo mean to ignore any file with the extensions ".swp" and ".swo." I added this because I often edit my code on my other machine with Vim, and Vim creates swapfiles. These are useful for me because they allow me to recover if I do something like closing without saving, but they do not belong in the repository. This is because they are cache files and should stay local: It would be really bad if someone ended up with one of these meant for a different version of the same file, different file, different Vim version, etc. Instead of worrying about these files breaking things by getting where they shouldn't be, I added them to .gitignore specifically so they never leave the machine they belong with.
+b0100001001000010 documentation
+content.txt
+*.swp
+*.swo
